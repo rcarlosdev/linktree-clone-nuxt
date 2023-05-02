@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <client-only> -->
+    <client-only>
       <input
         :id="placeholder"
         :placeholder="placeholder"
@@ -13,7 +13,7 @@
         v-model="inputComputed"
         autocomplete="off"
       />
-    <!-- </client-only> -->
+    </client-only>
     <span v-if="error" class="text-red-500 text-[14px] font-semibold">
       {{ error }}
     </span>

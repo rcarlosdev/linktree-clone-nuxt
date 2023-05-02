@@ -37,5 +37,5 @@ const { updatedLinkId } = storeToRefs(userStore);
 
 const route = useRoute();
 
-onUnmounted(() => (updatedLinkId.value = 0));
+onUnmounted(() => updatedLinkId.value = 0);
 </script>

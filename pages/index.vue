@@ -4,7 +4,7 @@
       <h1 class="lg:text-5xl text-3xl text-center font-extrabold">
         Log in to your Linktree
       </h1>
-      <form class="mt-12" @submit.prevent="($event) => login()">
+      <form class="mt-10" @submit.prevent="($event) => login()">
         <div>
           <TextInput
             placeholder="Email: link@mail.com"
@@ -21,7 +21,7 @@
             :error="errors && errors.password ? errors.password[0] : ''"
           />
         </div>
-        <div class="mt-10">
+        <div class="mt-5">
           <button
             type="submit"
             class="rounded-full w-full p-3 font-bold"
@@ -36,7 +36,7 @@
           </button>
         </div>
       </form>
-      <div class="text-[14px] text-center pt-12">
+      <div class="text-[14px] text-center pt-6">
         Don't have an account?
         <NuxtLink to="/register" class="text-[#8228D9] underline"
           >Sign up</NuxtLink
@@ -47,7 +47,7 @@
 </template>
 
 <script setup>
-import AuthLayout from "~/layouts/AuthLayout.vue";
+import AuthLayout from "~~/layouts/AuthLayout.vue";
 
 let email = ref(null);
 let password = ref(null);
